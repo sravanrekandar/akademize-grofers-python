@@ -3,6 +3,7 @@ def is_prime(n):
     stop = n-1
 
     i = start
+
     while(i <= stop):
         if n % i == 0:
             return False
@@ -33,6 +34,14 @@ main()
 
 """
 n   start   stop    i       n%i
-4   2       3       2       4%2 == 0 > True
+---------------------------------
+11  2       10      2
+                    3
+                    4
+                    10
 
+25  2       24      2
+                    3
+                    4
+                    5
 """
